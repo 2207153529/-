@@ -56,4 +56,4 @@
 
 页面展示如下图：
 
-![]()
+![](https://github.com/2207153529/yiqing/blob/main/images/%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%A4%BA%E5%9B%BE.png)
