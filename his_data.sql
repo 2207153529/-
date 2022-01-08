@@ -1,0 +1,75 @@
+/*
+ Navicat Premium Data Transfer
+
+ Source Server         : database
+ Source Server Type    : MySQL
+ Source Server Version : 80025
+ Source Host           : localhost:3306
+ Source Schema         : chain_yiqing
+
+ Target Server Type    : MySQL
+ Target Server Version : 80025
+ File Encoding         : 65001
+
+ Date: 18/10/2021 09:34:47
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for his_data
+-- ----------------------------
+DROP TABLE IF EXISTS `his_data`;
+CREATE TABLE `his_data`  (
+  `date` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '时间',
+  `sure` int(0) NULL DEFAULT NULL COMMENT '累计确诊人数',
+  `cure` int(0) NULL DEFAULT NULL COMMENT '累计治愈人数'
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of his_data
+-- ----------------------------
+INSERT INTO `his_data` VALUES ('20200110', 27, 2);
+INSERT INTO `his_data` VALUES ('20200201', 14411, 328);
+INSERT INTO `his_data` VALUES ('20200301', 80174, 44518);
+INSERT INTO `his_data` VALUES ('20200401', 82724, 76610);
+INSERT INTO `his_data` VALUES ('20200501', 84388, 78905);
+INSERT INTO `his_data` VALUES ('20200601', 84595, 79822);
+INSERT INTO `his_data` VALUES ('20200701', 85263, 80087);
+INSERT INTO `his_data` VALUES ('20200801', 88301, 81348);
+INSERT INTO `his_data` VALUES ('20200901', 90422, 85122);
+INSERT INTO `his_data` VALUES ('20201001', 91082, 85968);
+INSERT INTO `his_data` VALUES ('20201101', 91955, 86684);
+INSERT INTO `his_data` VALUES ('20201201', 93668, 87621);
+INSERT INTO `his_data` VALUES ('20210110', 97652, 91418);
+INSERT INTO `his_data` VALUES ('20210201', 101039, 93726);
+INSERT INTO `his_data` VALUES ('20210301', 101945, 96600);
+INSERT INTO `his_data` VALUES ('20210401', 102790, 97541);
+INSERT INTO `his_data` VALUES ('20210501', 103649, 98259);
+INSERT INTO `his_data` VALUES ('20210601', 111887, 98921);
+INSERT INTO `his_data` VALUES ('20210701', 118644, 108726);
+INSERT INTO `his_data` VALUES ('20210801', 120837, 112024);
+INSERT INTO `his_data` VALUES ('20200110', 27, 2);
+INSERT INTO `his_data` VALUES ('20200201', 14411, 328);
+INSERT INTO `his_data` VALUES ('20200301', 80174, 44518);
+INSERT INTO `his_data` VALUES ('20200401', 82724, 76610);
+INSERT INTO `his_data` VALUES ('20200501', 84388, 78905);
+INSERT INTO `his_data` VALUES ('20200601', 84595, 79822);
+INSERT INTO `his_data` VALUES ('20200701', 85263, 80087);
+INSERT INTO `his_data` VALUES ('20200801', 88301, 81348);
+INSERT INTO `his_data` VALUES ('20200901', 90422, 85122);
+INSERT INTO `his_data` VALUES ('20201001', 91082, 85968);
+INSERT INTO `his_data` VALUES ('20201101', 91955, 86684);
+INSERT INTO `his_data` VALUES ('20201201', 93668, 87621);
+INSERT INTO `his_data` VALUES ('20210110', 97652, 91418);
+INSERT INTO `his_data` VALUES ('20210201', 101039, 93726);
+INSERT INTO `his_data` VALUES ('20210301', 101945, 96600);
+INSERT INTO `his_data` VALUES ('20210401', 102790, 97541);
+INSERT INTO `his_data` VALUES ('20210501', 103649, 98259);
+INSERT INTO `his_data` VALUES ('20210601', 111887, 98921);
+INSERT INTO `his_data` VALUES ('20210701', 118644, 108726);
+INSERT INTO `his_data` VALUES ('20210801', 120837, 112024);
+INSERT INTO `his_data` VALUES ('20210901', 123103, 114863);
+
+SET FOREIGN_KEY_CHECKS = 1;

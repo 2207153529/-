@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>数据可视化</title>
+    <link rel="stylesheet" href="../static/css/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>数据可视化-ECharts</h1>
+      <div class="showTime"><sapn><strong>2021年9月10日16时21分30秒</strong></sapn></div>
+    <script>
+      var t = null;
+        t = setTimeout(time, 1000);
+        function time() {
+          clearTimeout(t);
+          dt = new Date();
+          var y = dt.getFullYear();
+          var mt = dt.getMonth() + 1;
+          var day = dt.getDate();
+          var h = dt.getHours(); 
+          var m = dt.getMinutes();
+          var s = dt.getSeconds();
+          document.querySelector(".showTime").innerHTML =
+            "当前时间：" +
+            y +
+            "年" +
+            mt +
+            "月" +
+            day +
+            "日" +
+            h +
+            "时" +
+            m +
+            "分" +
+            s +
+            "秒";
+          t = setTimeout(time, 1000);
+        }
+    </script>
+    </header>
+    <section class="mainbox">
+      <div class="column">
+        <div class="panel bar">
+          <h2>
+            柱状图-近几月疫情状况图
+          </h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel line0">
+          <h2 id="line-h2">折线图-疫情爆发到现在趋势图<a href="javascript:;">2020</a>
+            <a href="javascript:;">2021</a></h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel pie">
+          <h2>饼形图-疫情严重地区分布图</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="no">
+          <div class="no-hd">
+            <ul>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="no-bd">
+            <ul>
+              <li>现有确诊</li>
+              <li>累计确诊</li>
+            </ul>
+          </div>
+        </div>
+        <div class="map">
+          <div class="chart"></div>
+          <div class="map1"></div>
+          <div class="map2"></div>
+          <div class="map3"></div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="panel bar1">
+          <h2>柱状图-疫情现在状况</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel line1">
+          <h2>折线图-累计确诊跟累计治愈</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+        <div class="panel pie1">
+          <h2>饼形图-当前疫情严重地区分布</h2>
+          <div class="chart"></div>
+          <div class="panel-footer"></div>
+        </div>
+      </div>
+    </section>
+    <script src="../static/js/flexible.js"></script>
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/echarts.min.js"></script>
+    <script src="../static/js/china.js"></script>
+    <script src="../static/js/ajax.js"></script>
+    <script src="../static/js/index.js"></script>
+    <script src="../static/js/ChinaEcharts.js"></script>
+  </body>
+</html>
